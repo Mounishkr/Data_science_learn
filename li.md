@@ -149,19 +149,3 @@ Would you like:
 3. Another **app idea** (e.g., E-commerce, Social Media, Weather App)?  
 
 Let me know! 🚀
-
-
-    '''
-    flow chart TD
-    A[UI Layer] -->|1. User taps 'Log Workout'| B[ViewModel]
-    B -->|2. Calls UseCase| C[Domain Layer]
-    C -->|3. Executes business logic| D[Repository]
-    D -->|4a. Local DB (Room)| E[Data Layer]
-    D -->|4b. Remote (Firestore)| F[Data Layer]
-    E -->|5. Returns workout data| D
-    F -->|6. Syncs data| D
-    D -->|7. Returns result| C
-    C -->|8. Updates state| B
-    B -->|9. Updates UI| A
-
-    '''
